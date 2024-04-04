@@ -24,17 +24,16 @@ Node* convertarraytoLL(vector<int> arr){
 return head;
 
 }
-void display(Node* head){
-    Node* temp=head;
-    while(temp->next!=NULL){
-        cout<<temp->data<<" ";
-        temp=temp->next;
-    }
-}
 int main(){
     vector<int> v{1,2,3,4,5};
     Node* head=convertarraytoLL(v);
-    display(head);
+    Node* temp=head;
+    while (temp)
+    {
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
+    
 
 
     return 0;
